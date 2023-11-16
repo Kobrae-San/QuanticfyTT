@@ -8,4 +8,3 @@ Welcome to the Quanticfy Project, a data management and filtering application de
 
 - Retrieve and display data.
 - Apply filters to customize the displayed information.
-- 
