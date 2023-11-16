@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresher</title>
+    <link rel="stylesheet" type="text/css" href="./stylesEquipment.css">
+</head>
+<body>
+    <div id="main-container" class="main-container">
+        <header class="header">
+
+            <h1 class="h1 title">Fresher</h1>
+    
+            <nav id="navbar" class="navbar">
+                <ul class="list">
+                    <a href="./fountain.html">
+                        <li class="list-item title">Fontaines à boires</li>
+                    </a>
+                    <a href="./greenLand.html">
+                        <li class="list-item title">Espaces Verts</li>
+                    </a>
+                    <a href="./equipment.html">
+                        <li class="list-item title">Equipements</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="container" class="container">
+    
+            <aside id="filter-tab" class="filter-tab">
+                <h3 class="filter-tab-title">Filtres</h3>
+                <p id="filter-reset" class="inactive">Reinitialiser tout les filtres</p>
+                <input type="text" class="filter-tab-searchbar">
+    
+                <div class="filter-tab-fountain-type">
+                    <h4 class="filter-title">Type d'équipements</h4>
+    
+                    <ul class="filters-list">
+                        <li id="Lieuxdeculte" class="filter-item filter-place-type">Lieux de culte</li>
+                        <li id="Brumisateur" class="filter-item filter-place-type">Brumisateur</li>
+                        <li id="Musée" class="filter-item filter-place-type">Musée</li>
+                        <li id="Terraindeboules" class="filter-item filter-place-type">Terrain de boules</li>
+                    </ul>
+                </div>
+    
+                <div class="filter-tab-city">
+                    <h4 class="filter-title">Ville</h4>
+    
+                    <ul class="filter-list">
+                        <li id="Paris1" class="filter-item filter-city">Paris 1</li>
+                        <li id="Paris2" class="filter-item filter-city">Paris 2</li>
+                        <li id="Paris3" class="filter-item filter-city">Paris 3</li>
+                        <li id="Paris4" class="filter-item filter-city">Paris 4</li>
+                        <li id="Paris5" class="filter-item filter-city">Paris 5</li>
+                        <li id="Paris6" class="filter-item filter-city">Paris 6</li>
+                        <li id="Paris7" class="filter-item filter-city">Paris 7</li>
+                        <li id="Paris12" class="filter-item filter-city">Paris 12</li>
+                    </ul>
+                </div>
+    
+                <div class="filter-tab-access-paid">
+                    <h4 class="filter-access">Payant</h4>
+    
+                    <ul class="filter-list">
+                        <li id="Oui" class="filter-item filter-access-paid">Oui</li>
+                        <li id="Non" class="filter-item filter-access-paid">Non</li>
+                    </ul>
+                </div>
+            </aside>
+    
+            <div id="dataset-tab" class="dataset-tab">
+                <table class="data-table">
+                    <thead class="data-table-head">
+                        <tr class="data-table-row-title">
+                            <th class="data-table-title" colspan="8"><h2>Équipements</h2></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody class="data-table-body">
+                        <tr class="data-table-row-subtitle">
+                            <th class="data-table-subtitle">Nom</th>
+                            <th class="data-table-subtitle">Ville</th>
+                            <th class="data-table-subtitle">Adresse</th>
+                            <th class="data-table-subtitle">Type d'équipements</th>
+                            <th class="data-table-subtitle">Horaires en semaines</th>
+                            <th class="data-table-subtitle">Horaires de fin de semaines</th>
+                            <th class="data-table-subtitle">Payant</th>
+                            <th class="data-table-subtitle">Statut d'ouverture</th>
+    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer class="footer">
+            Copyright &copy; Djédjé Gboble 2023
+        </footer>
+    </div>
+    <script src="./scriptEquipment.js"></script>
+</body>
+</html>
