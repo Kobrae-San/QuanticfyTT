@@ -11,7 +11,6 @@ async function equipmentAPIRequest() {
 equipmentAPIRequest()
     .then( result => {
         result.map( data => {
-            console.log(data.adresse);
             const tr = document.createElement('tr');
             const tdName = document.createElement('td');
             const tdCity = document.createElement('td');
@@ -108,7 +107,6 @@ equipmentAPIRequest()
             const elementToFilter = event.target.id;
             addToFilter(elementToFilter);
             filterFunction('.data-table-row');
-            console.log(active)
         })
     })
 
@@ -119,7 +117,6 @@ equipmentAPIRequest()
             const elementToFilter = event.target.id;
             addToFilter(elementToFilter);
             filterFunction('.data-table-row');
-            console.log(active)
         })
     })
 
