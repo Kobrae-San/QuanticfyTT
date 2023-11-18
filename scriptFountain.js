@@ -187,17 +187,6 @@ function filterFunction(tdClassName) {
 }
 
 // Adding the two function above to my element with event listener
-liCity.forEach((liElement) => {
-  liElement.addEventListener("click", (event) => {
-    const targetedElement = event.target;
-    targetedElement.classList.contains("active-filter")
-      ? targetedElement.classList.remove("active-filter")
-      : targetedElement.classList.add("active-filter");
-    const elementToFilter = event.target.id;
-    addToFilter(elementToFilter);
-    filterFunction(".data-table-row");
-  });
-});
 
 liFountainType.forEach((liElement) => {
   liElement.addEventListener("click", (event) => {
