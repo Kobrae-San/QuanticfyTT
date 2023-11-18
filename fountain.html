@@ -1,102 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fresher</title>
-    <link rel="stylesheet" type="text/css" href="./stylesFountain.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="./stylesFountain.css" />
+  </head>
+  <body>
     <div id="main-container" class="main-container">
-        <header class="header">
+      <header class="header">
+        <h1 class="h1 title">Fresher</h1>
 
-            <h1 class="h1 title">Fresher</h1>
-    
-            <nav id="navbar" class="navbar">
-                <ul class="list">
-                    <a href="./fountain.html">
-                        <li class="list-item title">Fontaines à boires</li>
-                    </a>
-                    <a href="./greenLand.html">
-                        <li class="list-item title">Espaces Verts</li>
-                    </a>
-                    <a href="./equipment.html">
-                        <li class="list-item title">Equipements</li>
-                    </a>
-                </ul>
-            </nav>
-        </header>
-    
-        <div class="container" id="container">
-            <aside id="filter-tab" class="filter-tab">
-                <h3 class="filter-tab-title">Filtres</h3>
-                <p id="filter-reset" class="inactive">Reinitialiser tout les filtres</p>
-                <input type="text" class="filter-tab-searchbar">
-    
-                <div class="filter-tab-fountain-type">
-                    <h4 class="filter-title">Type de Fontaine</h4>
-    
-                    <ul class="filters-list">
-                        <li id="BORNE_FONTAINE" class="filter-item filter-fountain-type">Borne Fontaine</li>
-                        <li id="FONTAINE_2EN1" class="filter-item filter-fountain-type">Fontaine 2 en 1</li>
-                        <li id="FONTAINE_ARCEAU" class="filter-item filter-fountain-type">Fontaine Arceau</li>
-                        <li id="FONTAINE_BOIS" class="filter-item filter-fountain-type">Fontaine en bois</li>
-                    </ul>
-                </div>
-    
-                <div class="filter-tab-city">
-                    <h4 class="filter-title">Ville</h4>
-    
-                    <ul class="filter-list">
-                        <li id="Bagnolet" class="filter-item filter-city">Bagnolet</li>
-                        <li id="Paris2" class="filter-item filter-city">Paris 2</li>
-                        <li id="Paris11" class="filter-item filter-city">Paris 11</li>
-                        <li id="Paris12" class="filter-item filter-city">Paris 12</li>
-                        <li id="Paris18" class="filter-item filter-city">Paris 18</li>
-                        <li id="Paris20" class="filter-item filter-city">Paris 20</li>
-                    </ul>
-                </div>
-    
-                <div class="filter-tab-availability">
-                    <h4 class="filter-availability">Disponibilité</h4>
-    
-                    <ul class="filter-list">
-                        <li id="Oui" class="filter-item filter-availability">Oui</li>
-                        <li id="Non" class="filter-item filter-availability">Non</li>
-                    </ul>
-                </div>
-            </aside>
-    
-            <div id="dataset-tab" class="dataset-tab">
-                <table class="data-table">
-                    <thead class="data-table-head">
-                        <tr class="data-table-row-title">
-                            <th class="data-table-title" colspan="8"><h2>Fontaines à Boire</h2></th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody class="data-table-body">
-                        <tr class="data-table-row-subtitle">
-                            <th class="data-table-subtitle">Type de Fontaine</th>
-                            <th class="data-table-subtitle">Ville</th>
-                            <th class="data-table-subtitle">N° de Voie</th>
-                            <th class="data-table-subtitle">Voie</th>
-                            <th class="data-table-subtitle">Disponibilité</th>
-                            <th class="data-table-subtitle">Début d'indisponibilité</th>
-                            <th class="data-table-subtitle">Fin d'indisponibilité</th>
-                            <th class="data-table-subtitle">Motif d'indisponibilité</th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <nav id="navbar" class="navbar">
+          <ul class="list">
+            <a href="./fountain.html">
+              <li class="list-item title">Fontaines à boires</li>
+            </a>
+            <a href="./greenLand.html">
+              <li class="list-item title">Espaces Verts</li>
+            </a>
+            <a href="./equipment.html">
+              <li class="list-item title">Equipements</li>
+            </a>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container" id="container">
+        <aside id="filter-tab" class="filter-tab">
+          <h3 class="filter-tab-title">Filtres</h3>
+          <p id="filter-reset" class="inactive">
+            Reinitialiser tout les filtres
+          </p>
+          <input type="text" class="filter-tab-searchbar" />
+
+          <div class="filter-tab-fountain-type">
+            <h4 class="filter-title">Type de Fontaine</h4>
+
+            <ul class="filters-list">
+              <li id="BORNE_FONTAINE" class="filter-item filter-fountain-type">
+                Borne Fontaine
+              </li>
+              <li id="FONTAINE_2EN1" class="filter-item filter-fountain-type">
+                Fontaine 2 en 1
+              </li>
+              <li id="FONTAINE_ARCEAU" class="filter-item filter-fountain-type">
+                Fontaine Arceau
+              </li>
+              <li id="FONTAINE_BOIS" class="filter-item filter-fountain-type">
+                Fontaine en bois
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter-tab-city">
+            <h4 class="filter-title">Ville</h4>
+
+            <ul class="filter-list"></ul>
+          </div>
+
+          <div class="filter-tab-availability">
+            <h4 class="filter-availability">Disponibilité</h4>
+
+            <ul class="filter-list">
+              <li id="Oui" class="filter-item filter-availability">Oui</li>
+              <li id="Non" class="filter-item filter-availability">Non</li>
+            </ul>
+          </div>
+        </aside>
+
+        <div id="dataset-tab" class="dataset-tab">
+          <table class="data-table">
+            <thead class="data-table-head">
+              <tr class="data-table-row-title">
+                <th class="data-table-title" colspan="8">
+                  <h2>Fontaines à Boire</h2>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody class="data-table-body">
+              <tr class="data-table-row-subtitle">
+                <th class="data-table-subtitle">Type de Fontaine</th>
+                <th class="data-table-subtitle">Ville</th>
+                <th class="data-table-subtitle">N° de Voie</th>
+                <th class="data-table-subtitle">Voie</th>
+                <th class="data-table-subtitle">Disponibilité</th>
+                <th class="data-table-subtitle">Début d'indisponibilité</th>
+                <th class="data-table-subtitle">Fin d'indisponibilité</th>
+                <th class="data-table-subtitle">Motif d'indisponibilité</th>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    
-        <footer class="footer">
-            Copyright &copy; Djédjé Gboble 2023
-        </footer>
-    
+      </div>
+
+      <footer class="footer">Copyright &copy; Djédjé Gboble 2023</footer>
     </div>
 
     <script src="scriptFountain.js"></script>
-</body>
+  </body>
 </html>
