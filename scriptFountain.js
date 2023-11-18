@@ -19,6 +19,7 @@ fountainAPIRequest()
   // treatment of the data
   .then((result) => {
     const cityFilters = new Set();
+    const fountainFilter = new Set();
     result.map((data) => {
       // Mapping the result to display the data i need in the way i want
       // creation of row with all the information needed to display
@@ -33,6 +34,7 @@ fountainAPIRequest()
       tdFountainType.classList.add("fountain-type", "column");
       tdFountainType.innerText =
         data.type_objet.charAt(0) + data.type_objet.slice(1).toLowerCase();
+      fountainFilter.add(data.type_objet);
       const tdCity = document.createElement("td");
       const commune =
         data.commune.charAt(0) +
@@ -85,6 +87,7 @@ fountainAPIRequest()
       tdUnavailabilityReason.innerText = data.motif_ind
         ? data.motif_ind.charAt(0) + data.motif_ind.slice(1).toLowerCase()
         : "";
+
       tr.classList.add(
         "data-table-row",
         fountainTypeClass,
@@ -108,7 +111,6 @@ fountainAPIRequest()
     );
 
     cityFilters.forEach((city) => {
-      console.log(city);
       const liCityName = document.createElement("li");
       liCityName.classList.add("filter-item", "filter-city");
       liCityName.id = city.split(" ").join("");
@@ -122,6 +124,31 @@ fountainAPIRequest()
 
     document.querySelectorAll(".filter-city").forEach((liElement) => {
       liElement.addEventListener("click", (event) => {
+        const targetedElement = event.target;
+        targetedElement.classList.contains("active-filter")
+          ? targetedElement.classList.remove("active-filter")
+          : targetedElement.classList.add("active-filter");
+        const elementToFilter = event.target.id;
+        addToFilter(elementToFilter);
+        filterFunction(".data-table-row");
+      });
+    });
+
+    const fountainListContainer = document.querySelector(
+      ".filter-tab-fountain-type .filters-list"
+    );
+
+    fountainFilter.forEach((fountain) => {
+      const liFountainName = document.createElement("li");
+      liFountainName.classList.add("filter-item", "filter-fountain-type");
+      liFountainName.id = fountain.split(" ").join("_");
+      liFountainName.innerText = fountain;
+      fountainListContainer.appendChild(liFountainName);
+    });
+
+    document.querySelectorAll(".filter-fountain-type").forEach((liElement) => {
+      liElement.addEventListener("click", (event) => {
+        console.log("click");
         const targetedElement = event.target;
         targetedElement.classList.contains("active-filter")
           ? targetedElement.classList.remove("active-filter")
